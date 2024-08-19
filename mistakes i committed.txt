@@ -1,0 +1,21 @@
+Ideas are not found but forged
+Describe your idea in a sentence. Atleast have it clear. 
+    For example, not just "an ai app" but "an ai app for cyber bullying or flashcard for teacher"
+    It should a kind of one-liner that your mom-dad-brother-friend will understand in one line.
+    
+
+1.  Indentation errors. Mistakenly indenting 'return' statement of any other code 
+    in a 'while' or 'for' loop 
+2.  Mistakenly passing wrong function methods by 'refer by value' or 'refer by method'
+3.  Interchanging "node.op_token.type" to "node.op_token.value" or vise-versa
+4. This is correct 
+        node = res.register(self.bin_op(self.comp_expr, ((TOKEN_TYPE_KEYWORD, 'AND'), (TOKEN_TYPE_KEYWORD, 'OR'))))
+    This is wrong
+        node = res.register(self.bin_op(self.comp_expr, ((TOKEN_TYPE_KEYWORD, 'AND', (TOKEN_TYPE_KEYWORD, 'OR')))))
+    ((TOKEN_TYPE_KEYWORD, 'AND', (TOKEN_TYPE_KEYWORD, 'OR'))) != ((TOKEN_TYPE_KEYWORD, 'AND'), (TOKEN_TYPE_KEYWORD, 'OR'))
+5. This is correct
+        expr = res.register(self.expr())
+    This is wrong
+        expr = res.register(self,expr())
+
+4th and 5th took me 5 days to fix. Use of wrong ")" at the wrong place and mistakenly typing  "," instead of "."
