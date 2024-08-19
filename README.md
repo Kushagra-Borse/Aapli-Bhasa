@@ -17,7 +17,7 @@ source myenv/bin/activate
 
 
 ```
-python Bhasha.py
+python shell.py
 ```
 
 I have written an interpreted language in Python 😉. It might not be the best idea to write it in Python.
